@@ -18,17 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YRK-V7-aoP" userLabel="ButtonView">
-                                <rect key="frame" x="147.5" y="547" width="80" height="80"/>
+                                <rect key="frame" x="147.5" y="531" width="80" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bc-vX-dzQ">
                                         <rect key="frame" x="-1" y="0.0" width="80" height="80"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Tap me"/>
                                         <connections>
                                             <action selector="WaveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="20f-Oc-RM1"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="1Xq-eA-QQH"/>
                                     <constraint firstAttribute="trailing" secondItem="2bc-vX-dzQ" secondAttribute="trailing" constant="1" id="769-KR-Amf"/>
@@ -49,12 +49,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t17-93-Eob" secondAttribute="trailing" id="F5J-xh-3fp"/>
                             <constraint firstItem="YRK-V7-aoP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lhx-sk-zBP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="t17-93-Eob" secondAttribute="bottom" id="VYb-f4-rhj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YRK-V7-aoP" secondAttribute="bottom" constant="56" id="fJ4-Uh-L1W"/>
                             <constraint firstItem="t17-93-Eob" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vdw-Ax-3h2"/>
-                            <constraint firstItem="YRK-V7-aoP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="527" id="zAu-1u-IsV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="waveButtonOutlet" destination="YRK-V7-aoP" id="y5p-eD-sbh"/>
                         <outlet property="waveView" destination="t17-93-Eob" id="oMQ-nt-2Uq"/>
                     </connections>
                 </viewController>
